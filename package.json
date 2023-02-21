@@ -1,22 +1,28 @@
 {
-  "name": "magic-svg",
+  "name": "e-manager",
   "version": "1.0.0",
-  "description": "",
-  "type": "module",
+  "description": "![License Badge](https://img.shields.io/badge/license-MIT%20License-lightgreen)",
   "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
-    "test": "jest"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/winglovecola/e-manager.git"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.20.12",
-    "@babel/preset-env": "^7.20.2",
-    "babel-jest": "^29.4.2",
-    "jest": "^24.9.0"
+  "bugs": {
+    "url": "https://github.com/winglovecola/e-manager/issues"
   },
+  "homepage": "https://github.com/winglovecola/e-manager#readme",
   "dependencies": {
-    "inquirer": "^8.2.5",
-    "rxjs": "^7.8.0"
+    "console.table": "^0.10.0",
+    "inquirer": "^8.2.4",
+    "mysql2": "^3.1.2"
   }
 }
