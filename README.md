@@ -1,12 +1,11 @@
-# Magic SVG
+# E-Manager
 ![License Badge](https://img.shields.io/badge/license-MIT%20License-lightgreen)
 
 
 
 ## Description
 
-Magic SVG is a lightweight node app that can create professional SVG file for free. Simply fill in the required fields to create a custom svg file.
-
+E-Manager is a versatile node application designed to streamline your company's employee management process. With its robust feature set, you can easily assign employees to different departments and managers, boosting overall productivity and efficiency. This powerful tool helps ensure that your company operates smoothly, with all employees working in concert towards your business objectives.
 
 
 ## Table of Contents
@@ -22,11 +21,11 @@ Magic SVG is a lightweight node app that can create professional SVG file for fr
 
 ## Preview
 
-![Screenshot](https://github.com/winglovecola/magic-svg/blob/main/assets/images/screenshot.jpg?raw=true)
+![Screenshot](https://github.com/winglovecola/e-manager/blob/main/assets/images/screenshot.jpg?raw=true)
 
-### [Introduction Video](https://drive.google.com/file/d/1Wc522kOgikuKqU3dwVWUBCJNZqKHLgH1/view?usp=sharing)
+### [Introduction Video]()
 
-### [Usage Walkthrough Video](https://drive.google.com/file/d/1ch394PJFU_gwMF1S3BJtJPKwjR0skz5h/view?usp=sharing)
+### [Usage Walkthrough Video]()
 
 
 
