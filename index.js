@@ -11,13 +11,11 @@ const mEmployee = require('./lib/employee.js');
 
 
 
-//define questions
-//questions declare in particular order has a purpose, make sure the sequence of question array is not moved
-
+//define employee manager options
 let managementOptions = [{
     type: 'list',
     message: 'How can I help you?',
-    choices: ['View All Employees', 'View Employees By Manager', 'View Employees By Department', "Add Employee", "Update Employee Role", "Update Employee Manager", "View All Roles", "Add Role", 'View All Departments', 'Add Department', "Quit"],
+    choices: ['View All Employees', 'View Employees By Manager', 'View Employees By Department', "Add Employee", "Update Employee Role", "Update Employee Manager", "Remove Employee", "View All Roles", "Add Role", "Remove Role", 'View All Departments', 'Add Department', "Remove Department", "Total Utilized Budget", "Quit"],
     name: 'action'
 }];
 
@@ -25,7 +23,7 @@ let managementOptions = [{
 
 
 
-  
+//manager init function
 function eManagerStart ()
 {
     inquirer.prompt(managementOptions).then((res) => {
@@ -84,6 +82,13 @@ function eManagerStart ()
             });
             
         }
+        else if (res.action == "Remove Employee")
+        {
+            mEmployee.remove()
+            .then((res) => {
+                eManagerStart ();   
+            });
+        }
         else if (res.action == "View All Roles")
         {
             
@@ -102,6 +107,15 @@ function eManagerStart ()
             });
             
         }
+        else if (res.action == "Remove Role")
+        {
+            
+            mRole.remove()
+            .then((res) => {
+                eManagerStart ();   
+            });
+            
+        }   
         else if (res.action == "View All Departments")
         {
             
@@ -119,6 +133,21 @@ function eManagerStart ()
             });
  
         }
+        else if (res.action == "Remove Department")
+        {
+            mDepartment.remove()
+            .then((res) => {
+                eManagerStart ();   
+            });
+ 
+        }
+        else if (res.action == "Total Utilized Budget")
+        {
+            mEmployee.totalUtilizedBudget()
+            .then((res) => {
+                eManagerStart ();   
+            });
+        }
         else if (res.action == "Quit")
         {
             process.exit();
@@ -129,5 +158,5 @@ function eManagerStart ()
     });
 }
 
-
+//start employee manager
 eManagerStart ();
