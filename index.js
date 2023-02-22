@@ -17,7 +17,7 @@ const mEmployee = require('./lib/employee.js');
 let managementOptions = [{
     type: 'list',
     message: 'How can I help you?',
-    choices: ['View All Employees', 'View Employees By Manager', 'View Employees By Department', "Add Employee", "Update Employee Role", "View All Roles", "Add Role", 'View All Departments', 'Add Department', "Quit"],
+    choices: ['View All Employees', 'View Employees By Manager', 'View Employees By Department', "Add Employee", "Update Employee Role", "Update Employee Manager", "View All Roles", "Add Role", 'View All Departments', 'Add Department', "Quit"],
     name: 'action'
 }];
 
@@ -70,6 +70,15 @@ function eManagerStart ()
         {
             
             mEmployee.updateRole()
+            .then((res) => {
+                eManagerStart ();   
+            });
+            
+        }
+        else if (res.action == "Update Employee Manager")
+        {
+            
+            mEmployee.updateManager()
             .then((res) => {
                 eManagerStart ();   
             });
