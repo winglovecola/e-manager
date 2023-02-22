@@ -36,7 +36,7 @@ npm install
 
 ## Usage
 
-node index.js
+npm start
 
 
 
