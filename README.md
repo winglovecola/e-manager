@@ -23,9 +23,7 @@ E-Manager is a versatile node application designed to streamline your company's 
 
 ![Screenshot](https://github.com/winglovecola/e-manager/blob/main/assets/images/screenshot.jpg?raw=true)
 
-### [Introduction Video]()
-
-### [Usage Walkthrough Video]()
+### [Usage Walkthrough Video](https://drive.google.com/file/d/1MGWB01PYUoodyuOnyOtSk28wBvFfmuER/view?usp=sharing)
 
 
 
